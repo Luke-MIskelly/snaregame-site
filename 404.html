@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Snare invite</title>
+<link rel="stylesheet" href="/page.css"></head>
+<body><main><img src="/icon.png" alt=""><h1>SNARE</h1><div class="box" id="box"><p>This link isn't a Snare invite.</p></div>
+<small>No ads. No chat with strangers. Friends only.</small></main>
+<script>
+// invite links land here when Snare isn't installed (or on iPhone for now): show the code to type in instead
+const m = /^\/([tdf])\/([A-Za-z0-9]{6,8})\/?$/.exec(location.pathname);
+if (m) { const what = { t: ['to Team Up', 'TEAM UP'], d: ['to a Duel', 'DUEL'], f: ['to be friends', 'FRIENDS'] }[m[1]], code = m[2].toUpperCase();
+  const box = document.getElementById('box'); box.innerHTML = '';
+  const add = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; e.textContent = text; box.appendChild(e); };
+  add('p', '', 'A friend invited you ' + what[0] + '.'); add('div', 'code', code);
+  add('p', '', 'Open Snare, tap ' + what[1] + ' and enter this code.'); add('small', '', "Don't have Snare yet? It's coming soon to Google Play and the App Store."); }
+</script></body></html>

@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.snaregame.app",
+    "sha256_cert_fingerprints": ["13:23:0A:08:19:15:EE:CE:61:55:89:22:83:4C:B6:C5:B6:FE:72:DB:C1:E8:E8:FC:AD:7B:B6:08:1D:45:79:3F"]
+  }
+}]
