@@ -6,3 +6,4 @@ h1{margin:0;font-size:40px;letter-spacing:.3em;color:var(--cyan);text-shadow:0 0
 p{margin:0;color:var(--dim)}.code{font-size:42px;letter-spacing:.25em;color:var(--amber);font-weight:700;padding-left:.25em}
 .box{width:100%;border:1px solid rgba(140,190,230,.18);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:10px;background:rgba(255,255,255,.03)}
 small{color:var(--dim);font-size:12px}
+.play{display:block;padding:16px 20px;border-radius:999px;border:1px solid rgba(94,242,255,.6);color:#e6eef8;text-decoration:none;letter-spacing:.2em;font-weight:600;font-size:14px;background:rgba(94,242,255,.08);box-shadow:0 0 24px rgba(94,242,255,.25)}

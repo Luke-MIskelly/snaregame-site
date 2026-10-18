@@ -9,5 +9,6 @@ if (m) { const what = { t: ['to Team Up', 'TEAM UP'], d: ['to a Duel', 'DUEL'], 
   const box = document.getElementById('box'); box.innerHTML = '';
   const add = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; e.textContent = text; box.appendChild(e); };
   add('p', '', 'A friend invited you ' + what[0] + '.'); add('div', 'code', code);
-  add('p', '', 'Open Snare, tap ' + what[1] + ' and enter this code.'); add('small', '', "Don't have Snare yet? It's coming soon to Google Play and the App Store."); }
+  const a = document.createElement('a'); a.className = 'play'; a.href = 'https://play.snaregame.co.uk/?' + m[1] + '=' + encodeURIComponent(code); a.textContent = 'PLAY NOW IN YOUR BROWSER'; box.appendChild(a);
+  add('p', '', 'Or open the Snare app, tap ' + what[1] + ' and enter this code.'); add('small', '', 'The app is coming soon to Google Play and the App Store.'); }
 </script></body></html>
