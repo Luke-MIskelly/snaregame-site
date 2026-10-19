@@ -4,8 +4,8 @@
 <small>No ads. No chat with strangers. Friends only.</small></main>
 <script>
 // invite links land here when Snare isn't installed (or on iPhone for now): show the code to type in instead
-const m = /^\/([tdf])\/([A-Za-z0-9]{6,8})\/?$/.exec(location.pathname);
-if (m) { const what = { t: ['to Team Up', 'TEAM UP'], d: ['to a Duel', 'DUEL'], f: ['to be friends', 'FRIENDS'] }[m[1]], code = m[2].toUpperCase();
+const m = /^\/([tdfc])\/([A-Za-z0-9]{6,8})\/?$/.exec(location.pathname);
+if (m) { const what = { t: ['to Team Up', 'TEAM UP'], d: ['to a Duel', 'DUEL'], f: ['to be friends', 'FRIENDS'], c: ['to join their crew', 'CREWS'] }[m[1]], code = m[2].toUpperCase();
   const box = document.getElementById('box'); box.innerHTML = '';
   const add = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; e.textContent = text; box.appendChild(e); };
   add('p', '', 'A friend invited you ' + what[0] + '.'); add('div', 'code', code);
